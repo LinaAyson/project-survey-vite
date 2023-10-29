@@ -22,7 +22,7 @@ export const Email = ({ updateFormData, value }) => {
         type="email"
         value={value}
         onChange={emailInput}
-        onBlur={() => setTriedToProceed(true)} // Update the state on blur
+        onBlur={() => setTriedToProceed(true)}
       />
       {showErrorMessage && (
         <p className="error-message">Invalid email format</p>

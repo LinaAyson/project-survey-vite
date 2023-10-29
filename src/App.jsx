@@ -9,8 +9,8 @@ export const App = () => {
     <>
       <Header />
       <section className="container">
-        <img src={bg} className="book-img" alt="" />
-        <div className="side-in-book">
+        <img src={bg} className="bg-img" alt="paper" />
+        <div className="container-question">
           <MultiStepForm />
         </div>
       </section>

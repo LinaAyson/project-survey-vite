@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Confetti from "react-confetti";
 import { Age } from "./components/smcom/Age";
 import { YearsExp } from "./components/smcom/YearsExp";
 import { Education } from "./components/smcom/Education";
@@ -13,11 +12,12 @@ export const MultiStepForm = () => {
     name: "",
     age: "",
     email: "",
+    number: "",
     favoriteCode: "",
     yearsOfExperience: "",
     educationDegree: "",
   });
-  const [showConfetti, setShowConfetti] = useState(false);
+
   const [triedToProceed, setTriedToProceed] = useState(false);
 
   const updateFormData = (field, value) => {
@@ -93,6 +93,12 @@ export const MultiStepForm = () => {
               updateFormData={updateFormData}
             />
           )}
+          {currentStep === 7 && (
+            <PhoneNumber
+              value={formData.userNumber}
+              updateFormData={updateFormData}
+            />
+          )}
           <div className="container-button">
             {currentStep > 1 && (
               <button className="action-button" onClick={prevStep}>
@@ -114,8 +120,6 @@ export const MultiStepForm = () => {
               <button
                 className="action-button"
                 onClick={() => {
-                  setShowConfetti(true); // Show confetti when the form is submitted
-
                   setShowSummary(true);
                 }}
               >
@@ -123,15 +127,6 @@ export const MultiStepForm = () => {
               </button>
             )}
           </div>
-          {showConfetti && <Confetti />}
-
-          <button
-            onClick={() => {
-              setShowConfetti(true); // Show confetti when the form is submitted
-            }}
-          >
-            hello
-          </button>
         </div>
       )}
     </div>

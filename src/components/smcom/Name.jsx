@@ -3,8 +3,13 @@ export const Name = ({ value, updateFormData }) => {
 
   return (
     <div className="container-qst">
-      <label>Enter your name:</label>
-      <input type="text" value={value} onChange={userName} placeholder="name" />
+      <label>Enter your full name </label>
+      <input
+        type="text"
+        value={value}
+        onChange={userName}
+        placeholder="name and surname"
+      />
     </div>
   );
 };
