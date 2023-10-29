@@ -1,4 +1,3 @@
-import { useState } from "react";
 import bg from "./assets/cov1.jpg";
 import { MultiStepForm } from "./MultiStepForm.jsx";
 import Header from "./components/Header";

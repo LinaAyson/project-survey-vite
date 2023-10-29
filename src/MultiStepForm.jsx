@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Age } from "./components/smcom/Age";
-import { YearsExp } from "./components/smcom/YearsExp";
-import { Education } from "./components/smcom/Education";
-import { ProgrammingLang } from "./components/smcom/ProgrammingLang";
-import { Email } from "./components/smcom/Email";
-import { Name } from "./components/smcom/Name";
+import { Age } from "./components/Age";
+import { YearsExp } from "./components/YearsExp";
+import { Education } from "./components/Education";
+import { ProgrammingLang } from "./components/ProgrammingLang";
+import { Email } from "./components/Email";
+import { Name } from "./components/Name";
 import FormSummary from "./components/FormSummary";
 
 export const MultiStepForm = () => {

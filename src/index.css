@@ -88,9 +88,10 @@ button:hover {
 .container-info {
   display: flex;
   font-size: 14px;
-  border: 1px solid grey;
+  border: 1px solid #3a6c69;
   padding: 0.5rem;
   flex-direction: column;
+  font-weight: 400;
 }
 .container-info h3 {
   margin-top: 1px;
@@ -140,12 +141,3 @@ input {
     padding: 1;
   }
 }
-
-/* @media (max-width: 670px) {
-  .container-question {
-    font-size: 12px;
-    display: flex;
-    padding: 1rem;
-    margin: 2rem;
-  }
-} */

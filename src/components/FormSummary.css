@@ -1,5 +1,5 @@
 .animated-text {
-  animation: fadeIn 1s ease-in-out; /* Add your animation properties here */
+  animation: fadeIn 1s ease-in-out;
 }
 
 @keyframes fadeIn {

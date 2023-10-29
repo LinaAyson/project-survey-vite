@@ -16,10 +16,10 @@ export default function FormSummary({ formData }) {
 
   return (
     <>
-      <div className="container-info">
-        <h3>Contact details</h3>
+      <div className="container-info text-primary">
+        <h3 className="">Contact details</h3>
         <div className="">
-          <p> {formData.name} </p>
+          <p>Name: {formData.name} </p>
           <p>Email: {formData.email} </p>
         </div>
       </div>
