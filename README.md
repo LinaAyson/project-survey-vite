@@ -7,7 +7,7 @@
 # Survey Project
 
 Week 5 practising React State
-Making a typeform-like site
+Making a very basic typeform-like site do practice useState
 
 ### Dependency Installation & Startup Development Server
 
